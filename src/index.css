@@ -1,0 +1,27 @@
+:root {
+    font-family: 'Inter', sans-serif;
+}
+
+.App {
+    height: 100% !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.body {
+    margin: 0px;
+}
+
+.ag-header-cell-label {
+    font-family: 'Inter', sans-serif !important;
+}
+
+.grid-cell-centered {
+    text-align: left;
+    align-items: center;
+    display: flex !important;
+}

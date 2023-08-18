@@ -12,12 +12,14 @@
     "start:server": "node server/server.js"
   },
   "dependencies": {
+    "ag-grid-community": "^30.0.6",
+    "ag-grid-react": "^30.0.6",
     "faker": "^4.1.0",
     "fastify": "^2.14.1",
     "fastify-cors": "^3.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^5.0.1",
     "styled-components": "^5.1.1",
     "typescript": "^3.9.5"
   },

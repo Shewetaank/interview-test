@@ -46,7 +46,7 @@ server.get('/users/adults', async () => {
 
 server.get('/users/seniors', async () => {
   const users = createUsers(61, 100, 15);
-  return users;
+  return { data: users };
 });
 
 async function start() {
