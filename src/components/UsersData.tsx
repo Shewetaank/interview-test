@@ -91,7 +91,7 @@ const UsersData = React.forwardRef((props, ref) => {
         ])
             .then(([data1, data2, data3]) => {
                 let mappedUsers: User[] = [];
-                [...data1.data, ...data2.data, ...data3].forEach((item) => {
+                [...data1.data, ...data2.data, ...data3.data].forEach((item) => {
                     mappedUsers.push(new User(item.name.firstName + ' ' + item.name.lastName, item.age));
                 });
                 return mappedUsers

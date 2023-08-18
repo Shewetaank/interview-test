@@ -7,7 +7,7 @@ import UsersData from './components/UsersData';
 
 const API_URL = 'http://localhost:8099';
 
-const StyledBody = styled.body`
+const StyledDiv = styled.div`
   background-color: #F2F2F2;
   height: 100%;
   margin: 0%;
@@ -22,12 +22,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <StyledBody>
+      <StyledDiv>
         <PageTitle />
         <StyledInnerDiv>
           <UsersForm />
         </StyledInnerDiv>
-      </StyledBody>
+      </StyledDiv>
     </div>
   )
 }

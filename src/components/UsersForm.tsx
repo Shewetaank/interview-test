@@ -75,12 +75,22 @@ export default function UsersForm() {
 
     const handleMinChange = (event: any) => {
         updateForm(event);
-        userRef.current?.refineSearch(parseInt(event.target.value), formData.maxAge);
+        if (parseInt(event.target.value) <= formData.maxAge) {
+            userRef.current?.refineSearch(parseInt(event.target.value), formData.maxAge);
+            showErrors(false);
+        } else {
+            showErrors(true);
+        }
     };
 
     const handleMaxChange = (event: any) => {
         updateForm(event);
-        userRef.current?.refineSearch(formData.minAge, parseInt(event.target.value));
+        if (formData.minAge <= parseInt(event.target.value)) {
+            userRef.current?.refineSearch(formData.minAge, parseInt(event.target.value));
+            showErrors(false);
+        } else {
+            showErrors(true);
+        }
     };
 
     const handleSubmit = (event: any) => {
